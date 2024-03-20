@@ -1,4 +1,4 @@
-# How does C program work
+# How does a C program work
 
 This is the first program written in C. Run this program requires to invoke the  gcc compiler which, in turn, will
 produce the **a.out** file.  
