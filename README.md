@@ -18,9 +18,8 @@ Running the following command, you'll obtain the first 20 rows of the binary fil
 ```  
 After running this command, based on your machine, you will have something similar to the underlying lines in your prompt window:  
 ``` 
-    0000000000001149 <main>:
     1149:	f3 0f 1e fa          	endbr64
-    114d:	55                   	push   %rbp
+    114d:	55                   	push   %rbpgdb
     114e:	48 89 e5             	mov    %rsp,%rbp
     1151:	48 83 ec 10          	sub    $0x10,%rsp
     1155:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%rbp)
@@ -35,5 +34,6 @@ After running this command, based on your machine, you will have something simil
     117c:	c9                   	leave
     117d:	c3                   	ret
 ``` 
-
-!!! Work in progress !!!
+The first column stand for the addresses memory of each instruction converted in hexadecimal notation. 
+The central column represent the instruction in hexadecimal form. Eventually, on the far right end side, 
+there are the instructions expressed in assemply.
